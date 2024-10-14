@@ -1,0 +1,138 @@
+{
+  "announcedBuild": {
+    "id": "6707ba17e2a6876b9e4d9ca7",
+    "number": 7,
+    "status": "ANNOUNCED",
+    "autoAcceptChanges": false,
+    "app": {
+      "id": "6707ac131c66bfa417c76e23",
+      "turboSnapAvailability": "UNAVAILABLE"
+    }
+  },
+  "configuration": {},
+  "environment": {},
+  "exitCode": 210,
+  "exitCodeKey": "MISSING_DEPENDENCY",
+  "flags": {
+    "cypress": true,
+    "debug": true,
+    "outputDir": [],
+    "storybookBuildDir": [],
+    "externals": [],
+    "onlyStoryFiles": [],
+    "onlyStoryNames": [],
+    "untraced": [],
+    "fileHashing": true,
+    "interactive": true,
+    "appCode": []
+  },
+  "git": {
+    "version": "2.34.1",
+    "gitUserEmail": "tofikabdu2002@gmail.com",
+    "uncommittedHash": "",
+    "commit": "e1d5560d8eb4e615ad813dac8a5546c0362d9f7f",
+    "committedAt": 1728483246000,
+    "committerEmail": "tofikabdu2002@gmail.com",
+    "committerName": "tans1",
+    "branch": "tofik-abdu",
+    "slug": "aladia-hiring/frontend-qa-selection",
+    "fromCI": false,
+    "parentCommits": []
+  },
+  "input": [],
+  "isOnboarding": false,
+  "options": {
+    "fromCI": false,
+    "inAction": false,
+    "dryRun": false,
+    "debug": true,
+    "autoAcceptChanges": false,
+    "exitZeroOnChanges": false,
+    "exitOnceUploaded": false,
+    "diagnosticsFile": "chromatic-diagnostics.json",
+    "fileHashing": true,
+    "interactive": false,
+    "isLocalBuild": false,
+    "originalArgv": [
+      "--cypress",
+      "--project-token=chpt_4dc45935d7403e8",
+      "--debug"
+    ],
+    "logFile": "chromatic.log",
+    "forceRebuild": true,
+    "cypress": true,
+    "storybookLogFile": "build-storybook.log",
+    "branchName": ""
+  },
+  "packageJson": {
+    "name": "nuxt-app",
+    "private": true,
+    "type": "module",
+    "scripts": {
+      "build": "nuxt build",
+      "dev": "nuxt dev",
+      "generate": "nuxt generate",
+      "preview": "nuxt preview",
+      "postinstall": "nuxt prepare",
+      "storybook": "storybook dev --port 6006",
+      "build-storybook": "storybook build",
+      "cy:open": "cypress open"
+    },
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "^6.6.0",
+      "@nuxt/image": "^1.8.1",
+      "@nuxt/ui": "^2.18.7",
+      "@nuxtjs/storybook": "^8.3.1",
+      "@pinia/nuxt": "^0.5.5",
+      "@vuelidate/core": "^2.0.3",
+      "@vuelidate/validators": "^2.0.4",
+      "nuxt": "^3.13.0",
+      "vite": "^5.4.8",
+      "vue": "latest",
+      "vue-router": "latest",
+      "yup": "^1.4.0"
+    },
+    "devDependencies": {
+      "@chromatic-com/cypress": "^0.8.0",
+      "@nuxtjs/storybook": "7.0.2",
+      "@storybook-vue/nuxt": "0.2.6",
+      "@storybook/addon-essentials": "8.0.8",
+      "@storybook/addon-interactions": "8.0.8",
+      "@storybook/addon-links": "8.0.8",
+      "@storybook/blocks": "8.0.8",
+      "@storybook/builder-vite": "8.0.8",
+      "@storybook/test": "8.0.8",
+      "@storybook/vue3": "8.0.8",
+      "@types/node": "^18.17.5",
+      "@types/yup": "^0.32.0",
+      "autoprefixer": "^10.4.20",
+      "chromatic": "^11.12.5",
+      "cypress": "^13.15.0",
+      "cypress-image-snapshot": "^4.0.1",
+      "postcss": "^8.4.47",
+      "storybook": "8.0.8",
+      "tailwindcss": "^3.4.13",
+      "typescript": "5.0.4"
+    },
+    "version": "",
+    "readme": "ERROR: No README data found!",
+    "_id": "nuxt-app@"
+  },
+  "packagePath": "/home/tans/Documents/job/aladia/frontend-qa-selection/frontend/package.json",
+  "runtimeMetadata": {
+    "nodePlatform": "linux",
+    "nodeVersion": "20.12.2",
+    "packageManager": "pnpm",
+    "packageManagerVersion": "9.12.1"
+  },
+  "sessionId": "191b1fff-ef2b-415c-8ba9-391964cfd922",
+  "sourceDir": "/tmp/chromatic--2744039-oujDzJDAKYoO",
+  "startedAt": 1728559545853,
+  "storybook": {
+    "addons": [],
+    "viewLayer": "vue3",
+    "version": "8.0.8"
+  },
+  "task": "build",
+  "userError": true
+}
