@@ -1,0 +1,1 @@
+const a=async s=>localStorage.getItem("email")==s?{status:200,success:!0,message:"Email already exist!"}:{status:404,success:!1,message:"Email doesn't exist!"},t=async(s,e)=>({status:200,success:!0,message:"Login successful!"});export{t as l,a as s};

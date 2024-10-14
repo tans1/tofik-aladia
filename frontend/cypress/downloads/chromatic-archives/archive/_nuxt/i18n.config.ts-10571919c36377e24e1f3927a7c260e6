@@ -1,0 +1,14 @@
+import en from "/_nuxt/i18n/en.json?import";
+import it from "/_nuxt/i18n/it.json?import";
+import am from "/_nuxt/i18n/am.json?import";
+export default (() => ({
+  legacy: false,
+  locale: "en",
+  messages: {
+    en,
+    it,
+    am
+  }
+}));
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImkxOG4uY29uZmlnLnRzP2hhc2g9YmZmYWViY2ImY29uZmlnPTEiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGVuIGZyb20gXCIuL2kxOG4vZW4uanNvblwiO1xuaW1wb3J0IGl0IGZyb20gXCIuL2kxOG4vaXQuanNvblwiO1xuaW1wb3J0IGFtIGZyb20gXCIuL2kxOG4vYW0uanNvblwiO1xuXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVJMThuQ29uZmlnKCgpID0+ICh7XG4gIGxlZ2FjeTogZmFsc2UsXG4gIGxvY2FsZTogXCJlblwiLFxuICBtZXNzYWdlczoge1xuICAgIGVuLFxuICAgIGl0LFxuICAgIGFtXG4gIH1cbn0pKTtcbiJdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxRQUFRO0FBQ2YsT0FBTyxRQUFRO0FBQ2YsT0FBTyxRQUFRO0FBRWYsZUFBZSxpQkFBaUIsT0FBTztBQUFBLEVBQ3JDLFFBQVE7QUFBQSxFQUNSLFFBQVE7QUFBQSxFQUNSLFVBQVU7QUFBQSxJQUNSO0FBQUEsSUFDQTtBQUFBLElBQ0E7QUFBQSxFQUNGO0FBQ0YsRUFBRTsiLCJuYW1lcyI6W119
