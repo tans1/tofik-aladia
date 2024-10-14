@@ -1,0 +1,51 @@
+# name: Cypress E2E and Chromatic Visual Tests
+
+# on:
+#   pull_request:
+#     branches:
+#       - "**"
+# defaults:
+#   run:
+#     working-directory: ./frontend
+
+# jobs:
+#   setup:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v3
+#         with:
+#           ref: ${{ github.head_ref }}
+#           fetch-depth: 0
+
+#       # - name: Navigate to frontend folder
+#       #   run: cd frontend
+
+#       - name: Set up Node.js
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: "20.12.2"
+
+#       - name: Install PNPM
+#         run: |
+#           npm install -g pnpm
+
+#       - name: Install dependencies
+#         run: pnpm install
+
+#       - name: Start the application
+#         run: |
+#           pnpm run build
+#           pnpm run preview &
+
+#       - name: Wait for the application to be ready
+#         run: npx wait-on http://localhost:3000
+
+#       - name: Run Cypress E2E Tests
+#         run: ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 pnpm dlx cypress run
+
+#       - name: Build Storybook
+#         run: pnpm run build-storybook
+
+#       - name: Run Chromatic Visual Tests
+#         run: npx chromatic --project-token=chpt_4dc45935d7403e8 --exit-zero-on-changes -d storybook-static/

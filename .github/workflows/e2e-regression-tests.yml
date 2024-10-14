@@ -1,0 +1,46 @@
+name: E2E Visual Regression Tests
+
+on:
+  pull_request:
+    branches:
+      - "**"
+defaults:
+  run:
+    working-directory: ./frontend
+
+jobs:
+  e2e_visual_regression:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Install pnpm
+        run: |
+          npm install -g pnpm
+
+      - name: Install dependencies
+        run: |
+          pnpm install
+
+      - name: Start the application
+        run: |
+          pnpm run build
+          pnpm run preview &
+
+      - name: Wait for the application to be ready
+        run: npx wait-on http://localhost:3000
+
+      - name: Run Cypress Tests with Chromatic
+        run: |
+          ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 pnpm cypress run --e2e
+          npx chromatic --cypress --project-token=chpt_4dc45935d7403e8  --exit-zero-on-changes
